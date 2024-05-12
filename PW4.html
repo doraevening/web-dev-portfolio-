@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PW 4 Report</title>
+  
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+        *{
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        main {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 0px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        h1, h2, h3, h4 {
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        article {
+            margin-bottom: 40px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        mark {
+            background-color: #ff80ab;
+            color: #fff;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+
+        blockquote {
+            background-color: #f0f0f0;
+            border-left: 5px solid #ff80ab;
+            padding: 20px;
+            margin: 0;
+            color: #555;
+            font-style: italic;
+            border-radius: 5px;
+        }
+p:hover, mark:hover {
+            background-color: #999;
+            transition: background-color 0.3s ease;
+        }
+        blockquote p {
+            margin: 0;
+        }
+
+        cite {
+            display: block;
+            text-align: right;
+            font-style: italic;
+            color: #777;
+            margin-top: 5px;
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        caption {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        thead th, tfoot th {
+            background-color: #333;
+            color: #fff;
+            text-align: left;
+        }
+
+        tbody td {
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        td:last-child, tfoot th:last-child {
+            color: #ff80ab;
+        }
+
+        ul li:nth-child(odd), table tr:nth-child(even) {
+            background-color: #f0f0f0;
+        }
+
+        p::first-letter {
+            font-size: 150%;
+        }
+
+        ::selection {
+            background-color: #ff80ab;
+            color: #fff;
+        }
+
+        li::before {
+            content: "\2192 ";
+            margin-right: 5px;
+        }
+
+        ol :not(:last-child) {
+            background-color: #ff9a9a;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>VECHER DARIA PW4</h1>
+        <section id="text">
+            <article id="text__paragraphs">
+                <h2>What is selector’s specificity and how it’s calculated?</h2>
+                <p>
+                    <mark>A selector's specificity </mark> is a value that determines which style rules are applied to an element when multiple rules have conflicting properties. Specificity is calculated based on the different types of selectors used in a CSS rule. To calculate the specificity of a selector, you assign a numerical value to each of the four levels mentioned above. Then you compare the values of each level to determine which rule takes precedence
+                </p>
+<h2>What are complex selectors?</h2>
+                <p>
+                    <mark>Complex selectors</mark> in CSS are selectors that target elements based on their relationship to other elements in the HTML structure. They allow you to target specific elements that meet certain criteria or are nested within other elements. Complex selectors can be used to apply styles to elements that have a specific parent-child relationship, sibling relationship, or other types of relationships.
+                </p>
+<h2>What is the difference between pseudo-classes and pseudo-elements?</h2>
+                <p>
+                    <mark>Pseudo-classes</mark>target elements based on their state or interaction with the user, while <mark>pseudo-elements</mark> target specific parts of an element to apply additional styling. Both pseudo-classes and pseudo-elements provide powerful tools for creating dynamic and visually appealing designs in CSS.
+                </p>
+            </article>
+            <article id="text__blockquotes">
+                <h2>Blockquotes</h2>
+                <blockquote>
+                    <p>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text.</p>
+                    <p>It is typically distinguished visually using indentation and a different typeface or smaller size quotation. It may or may not include a citation, usually placed at the bottom.</p>
+                    <cite><a href="#!">Said no one, ever.</a></cite>
+                </blockquote>
+            </article>
+            <article id="text__lists">
+                <h2>Lists</h2>
+                <h3>Definition list</h3>
+                <dl>
+                    <dt>Definition List Title</dt>
+                    <dd>This is a definition list division.</dd>
+                </dl>
+                <h3>Ordered List</h3>
+                <ol>
+                    <li>List Item 1</li>
+                    <li>List Item 2</li>
+                    <li>List Item 3</li>
+                </ol>
+                <h3>Unordered List</h3>
+                <ul>
+                    <li>List Item 1</li>
+                    <li>List Item 2</li>
+                    <li>List Item 3</li>
+                </ul>
+            </article>
+            <article id="text__tables">
+                <h2>Tabular data</h2>
+                <table>
+                    <caption>Table Caption</caption>
+                    <thead>
+                        <tr>
+                            <th>Table Heading 1</th>
+                            <th>Table Heading 2</th>
+                            <th>Table Heading 3</th>
+                            <th>Table Heading 4</th>
+                            <th>Table Heading 5</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Table Cell 1</td>
+                            <td>Table Cell 2</td>
+                            <td>Table Cell 3</td>
+                            <td>Table Cell 4</td>
+                            <td>Table Cell 5</td>
+                        </tr>
+                        <tr>
+                            <td>Table Cell 1</td>
+                            <td>Table Cell 2</td>
+                            <td>Table Cell 3</td>
+                            <td>Table Cell 4</td>
+                            <td>Table Cell 5</td>
+                        </tr>
+                        <tr>
+                            <td>Table Cell 1</td>
+                            <td>Table Cell 2</td>
+                            <td>Table Cell 3</td>
+                            <td>Table Cell 4</td>
+                            <td>Table Cell 5</td>
+                        </tr>
+                        <tr>
+                            <td>Table Cell 1</td>
+                            <td>Table Cell 2</td>
+                            <td>Table Cell 3</td>
+                            <td>Table Cell 4</td>
+                            <td>Table Cell 5</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Table Footer 1</th>
+                            <th>Table Footer 2</th>
+                            <th>Table Footer 3</th>
+                            <th>Table Footer 4</th>
+                            <th>Table Footer 5</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </article>
+</section>
+    </main>
+</body>
+
+</html>
